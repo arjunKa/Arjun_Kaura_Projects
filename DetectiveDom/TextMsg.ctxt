@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TextMsg
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ textMsg\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ message\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=text
+comment2.target=TextMsg(java.lang.String)
+comment3.params=
+comment3.target=void\ destroy()
+comment4.params=
+comment4.target=void\ sendInput()
+numComments=5

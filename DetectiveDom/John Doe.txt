@@ -1,0 +1,159 @@
+GetWitnessList
+John Doe
+Samantha Perri
+end
+--------------------------------------------------
+Witness Name:
+John Doe
+Encounter:0
++---------------------------------
+//Clues:
+4 bank robbers spotted at scene
+At the time of the bank robberry, 4 suspects were spotted.
+//Clues:
+Robbers were carrying guns
+The robbers were holding 44. magnum pistols.
++---------------------------------
+Speech0
+DD: Hello, John I am gonna ask you a couple questions.
+John Doe: Okay, I'll try my best, detective...
+DD: Detective Dom.
+(AddtoNtbk)
+Test
+cont'd
+John Doe: It was a shocking experience to say the least. But I can answer your questions Detective Dom.
+DD: (I can choose a question to ask from the "Notebook")
+endOfSpeech
+Question:0
+Time of event
+Question:0
+Appearance of criminals
+Question:0
+Create Q for Perri
++---------------------------------
+unlockedSpeech:John Doe:Allesia Blames you
+DD: You know, Allesia blames you.
+John Doe: I know.
++---------------------------------
+Q: Create Q for Perri
+DD: let's make notebook for her.
+(AddtoNtbkOther)
+Samantha Perri:Party?
+Q: Time of event
+DD: What time did you witness the crime?
+John Doe: It's kind of hard to say, but I'd say around 9:00 PM 
+John Doe: was when I saw them come into the bank.
+(AddtoNtbk)
+Them?
+(add clue)
+Time of robbery
+Bank was robbed at around 9:00PM
+cont'd
+DD: This is good. Now we can pin-point the time of the robbery.
+Q: Them?
+DD: You said 'them'? How many were there?
+John Doe: Three of them.
+(show options)
+lie
+Q: Them?: clue required:
+4 bank robbers spotted at scene
+DD: That's not what the eyewitness report on our file says. We place 4 criminals in the bank on that day.
+John Doe: Oh, that's right. There were four of them.
+John Doe: The fourth was outside, keeping watch. I almost forgot.
+Accuse:Them?
+DD: I think there were more than three criminals that day.
+John Doe: I'm not witholding anything from you, but if that's what you think then sure.
+DD: (I can choose Evidence to prove he is lying)
+(choose evidence)
+Incorrect: chose lie: Them?
+John Doe: I don't see how that connects, Detective.
+Incorrect: chose doubt: Them?
+DD: I think there is more to this than you're telling me.
+John Doe: I told you I'd have trouble remembering, Detective. I'm sorry but that's all I know.
+Incorrect: chose truth: Them?
+DD: Alright, so they were a small team?
+John Doe: Yeah, I guess so. It's amazing they even pulled it off to be honest.
+Q: Appearance of criminals
+DD: Is there anything about the criminals you saw that could help us identify them?
+John Doe: One of them pointed their gun at us,
+John Doe: and I could see a blue beaded bracelet hanging from their wrist.
+(add clue)
+Blue Beaded bracelet
+One of the bank robbers was wearing a blue bracelet.
+end
+--------------------------------------------------
+
+for(int i = 0; i < cluesList.size(); i++){
+            //world = (MyWorld) getWorld();
+            // Message m = new NotebookMsg((String)notebookList.get(i));
+
+            cluesListObj.add(new CluesMsg((String)cluesList.get(i)));
+            //yPlace = ((Actor)cluesListObj.get(cluesListObj.size()-1)).getImage().getHeight()/2;
+            if(cluesListObj.size()==1 || count>0 ){
+                y = ((Actor)cluesListObj.get(cluesListObj.size()-1)).getImage().getHeight()/2 +
+                yClues - evidenceHolder.getImage().getHeight()/2 + 50;
+            }else{
+
+                y = ((Actor)cluesListObj.get(cluesListObj.size()-2)).getImage().getHeight()/2 +
+                ((Actor)cluesListObj.get(cluesListObj.size()-2)).getY() + 
+                ((Actor)cluesListObj.get(cluesListObj.size()-1)).getImage().getHeight()/2 +3;
+            }
+            //if( ((Actor)cluesListObj.get(cluesListObj.size()-1)).getImage().getHeight()>20)
+            //yPlace = ((Actor)cluesListObj.get(cluesListObj.size()-1)).getImage().getHeight()/2;
+            //if(cluesListObj.size()> 1 && ((Actor)cluesListObj.get(cluesListObj.size()-2)).getImage().getHeight()>20)
+            //yPlace = ((Actor)cluesListObj.get(cluesListObj.size()-1)).getImage().getHeight()/2;
+            ((CluesMsg)cluesListObj.get(i)).description= (String)cluesListDesc.get(i);
+            addObject((Actor)cluesListObj.get(i), xClues - evidenceHolder.getImage().getWidth()/2 + ((Actor)cluesListObj.get(i)).getImage().getWidth()/2 ,
+                y /*i*20 + yPlace*/);
+            yPlace = 0;
+            if(((Actor)cluesListObj.get(cluesListObj.size()-1)).getY() > 
+            (evidenceHolder.getY() + evidenceHolder.getImage().getHeight()/2 -15)){
+                addObject(new RightArrow(),   evidenceHolder.getX() + evidenceHolder.getImage().getWidth()/2, 
+                    evidenceHolder.getY() + evidenceHolder.getImage().getHeight()/2+ 20);
+                count = i;
+                break;
+            }
+
+        }
+
+-----------------------
+for(int z = count; z < cluesList.size(); z++){
+            //count++;
+            int i = z - count;
+            
+            if(z ==0 || i ==0){
+                y = ((Actor)cluesListObj.get(i)).getImage().getHeight()/2 +
+                yClues - evidenceHolder.getImage().getHeight()/2 + 50;
+            }else if(i >= 1 || (z >= 1 && i >= 1)) {
+                
+                y = ((Actor)cluesListObj.get(i+count)).getImage().getHeight()/2 +
+                ((Actor)cluesListObj.get(i+count-1)).getY() + 
+                ((Actor)cluesListObj.get(i+count-1)).getImage().getHeight()/2 +3;
+            }
+            
+            //((CluesMsg)cluesListObj.get(i)).description= (String)cluesListDesc.get(i);
+            if(i==0){
+            if(count!=0)
+                addObject((Actor)cluesListObj.get(count), xClues - evidenceHolder.getImage().getWidth()/2 
+            + ((Actor)cluesListObj.get(count)).getImage().getWidth()/2, y);
+            else
+             addObject((Actor)cluesListObj.get(count), xClues - evidenceHolder.getImage().getWidth()/2 
+            + ((Actor)cluesListObj.get(count)).getImage().getWidth()/2, y /*i*20 + yPlace*/);
+            
+        }else
+                addObject((Actor)cluesListObj.get(count + z), xClues - evidenceHolder.getImage().getWidth()/2
+                + ((Actor)cluesListObj.get(i)).getImage().getWidth()/2 , y /*i*20 + yPlace*/);
+            yPlace = 0;
+            
+            if( cluesListObj.size() > (z) && i>0 && ((Actor)cluesListObj.get(i+count)).getY() > 
+            (evidenceHolder.getY() + evidenceHolder.getImage().getHeight()/2 -25)){
+                addObject(new RightArrow(), evidenceHolder.getX() + evidenceHolder.getImage().getWidth()/2, 
+                    evidenceHolder.getY() - evidenceHolder.getImage().getHeight()/2+ 20);
+                count = i+count+1;
+                addObject(new LeftArrow(), evidenceHolder.getX() - evidenceHolder.getImage().getWidth()/2, 
+                    evidenceHolder.getY() - evidenceHolder.getImage().getHeight()/2+ 20);
+                oldCount = count;
+                break;
+            }
+
+        }

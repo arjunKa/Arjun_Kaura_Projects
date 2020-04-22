@@ -1,0 +1,134 @@
+Witness Name:
+Karen
+Encounter:0
+------
+Age: 26
+Gender: female
+Occupation: Housemaid
+-------
+Question0
+Name of assaliant
+Question0
+Blaming John Doe
+------------
+Speech0
+DD: Hello, you must be Karen.
+Karen: You're not a cop, are you? You seem too well dressed.
+DD: I'm a detective.
+Karen: Well it's about time. I've been waiting here for a while. And I missed my shift for this.
+DD: I don't think you'll need to worry about your shift for a while. The whole manor is barred off for investigation.
+Karen: Oh, yeh, that's right. Iguess it's just to have to think about that place in that way. 
+DD: How long have you been working for Mr. Werner? You seem rather young.
+Karen: Oh well, thank you for saying. And I've only been working for him for 2 months now. Just two months and this happens. Probably the craziest job I ever had. 
+Karen: I think he fired his last maid.. or did she leave?
+(add clue)
+New maid
+Karen, the housemaid is newly hired from two months ago.
+cont'd
+Karen: Well either way I'm probably going to be leaving too now that this happened. What kind of sicko digs up a grave?
+DD: If I knew I wouldn't even be here talking with you.
+Karen: Ha. Funny. Let's just start with the questions so I can get out of here. 
+end
+-------------
+Q: What did you see
+DD: I know that you are up in the morning before Mr. Werner.
+Karen: Yeah, he tells me to prepare his medication for him every morning before he wakes up. It's annoying but Ican't so no I guess.
+DD: Did you see anything? You didn't look outside and see the grave and casket?
+Karen: If I saw a casket I'd probably tell someone, wouldn't I? So no, I didn't see it. I was busy in the house.
+(add clue)
+David was up early
+Karen says David was not in his room early in the morning
+cont'd
+Karen: But I did notice David was not in his room when I passed by.
+(show options)
+truth
+DD: He's not normally up that early?
+Karen: No, he's pretty lazy to be honest actually. I'm surprised Mr. Werner hasn't fired him.
+(unlockSpeechNow)
+Creepy David
+(unlockedSpeechNow) Creepy David
+Karen: And he's also a little creepy. You know how some guys are creepy in just a weird way?
+DD: No, I don't know.
+(unlock speech)
+Chief- Tutorial1
+cont'd
+Karen: He is definetly a few levels above that. Creepy on a new level.
+DD: Unfortunatley, I don't have your intuition.
+Karen: Yeah, you should all really know this kinda stuff. You're detectives after all.
+DD: Just another one of our fatal shortcomings, I suppose.
+(add person)
+David
+end
+Incorrect: chose doubt: What did you see
+DD: You sure that is all, Karen? I feel like someone like you wouldn't miss a casket out in the open.
+Karen: I already told you. I was in the house working. I never saw anything else strange.
+Karen: David is definetly on my radar for this thing though.
+(unlockSpeechNow)
+Creepy David
+end
+Accuse:What did you see
+DD: You did see something more, though. I know that much for sure.
+Karen: All right, well if you're so sure then why don't you show some proof, huh, Detective D?
+(choose evidence)
+null
+Incorrect: chose lie: What did you see
+Karen: Yeah, that doesn't make sense, Detective. And here I was thinking you were one of the cool ones around here.
+Karen: Now that you're done pointing fingers at me without much reason -- beceause I think we both know it's clearly not me -- let me tell you something that might actually help you, Detective D.
+Karen: David. The gardener. He's a real weirdo.
+DD: Please don't call me Detective D.
+Karen: Why not? It's a cute nickname and plus it, like, helps calm my nerves because I'm a little shakey after today, and I didn't even have my morning coffee...
+DD: *sighs*
+Karen: .. now that I think about it, I didn't even have my morning bagel. Jeez, today has been really hard on me.
+DD: We were talking about David. Remember?
+Karen: Oh yeah, David. He's real weird.
+(unlockSpeechNow)
+Creepy David
+end
+------------------+
+Q: Werner's accusation
+DD: Mr. Werner says you were on the 2nd floor when the robbery happend.
+Karen: I thought I told you my story already, I was out on my smoke break.
+DD: Do you know any reason why he would think you were up there.
+Karen: There's a lot of us working for him, Detective. He mixes faces up sometimes. Heck, one time he thought my name was Rachel.
+DD: So you think it was one of those times again?
+Karen: Absolutley, Detective. I cross my heart on it.
+(show options)
+doubt
+DD: Come on now, Karen. You and I both know that just because someone is at the wrong palce at the wrong time, doesn't mean they are the cause of it.
+Karen: Okay, fine. I was up there, but it was only for a little while. I had left my pack of smokes in my purse and went up to grab them, but I had nothing to do with what happend.
+DD: While you were up there, did you see anything suspicious.
+Karen: I wasn't paying much attention who was around me, but I did notice the windows were open in the main hall of the 2nd floor, which was odd 'cause it was quite windy.
+(add clue)
+Open windows
+Windows were open on 2nd floor
+cont'd
+DD: Alright, that could come in handy.
+------------
+Accuse:Werner's accusation
+DD: I think you were up there Karen, and I think you don't want me knowing that.
+Karen: You can theorize all day if you wanted detective, but I just don't have the time to entertain you.
+DD: (I can choose Evidence to prove she is lying)
+(choose evidence)
+end
+Incorrect: chose lie: Werner's accusation
+Karen: It seems you're memory also isn't too sharp too, Detective.
+end
+Incorrect: chose truth: Werner's accusation
+DD: So this must happen often I gues. Mr. Werner mixing up the housemaids. Who do you think was up there then?
+Karen: It must have been.. Ra- no. Must have been one of the other housemaids, but I'm not sure who.
+end
+John Doe: I told you I'd have trouble remembering, Detective. I'm sorry but that's all I know.
+Karen: Just earlier I prepared a drink for him. He's getting old, Detective, and he's been drinking a lot latley, and it's affecting his memory. Surely you must have seen this kinda stuff before.
+Karen: I'm not sure.
+Q: Blaming John Doe
+DD: Why did you bame John?
+Karen: I think it's him.
+(add clue)
+John Doe suspect
+John Doe might be the killer.
+Q: Party?
+DD: this is sign that it works.
+Q: Mr. Werner's accusation
+DD: Do you know that Mr. Werner accuses you?
+end
+-------------------------------

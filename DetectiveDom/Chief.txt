@@ -1,0 +1,77 @@
+LocationsMap:
+Northwest City Bank
+-Location where robbery took place.
+Hampshire Police Station
+-Police station.
+
+
+
+-------------------------------------------------------
+Location: Hampshire Police Station
+
+Speech0
+Chief: Dom, we've got a new case in.
+DD: I always love a good case. What's it about?
+Chief: There's been a theft in the Werner manor.
+DD: The Werner manor. I know that place. Richard Werner owns that place.
+Chief: Yes, one of the richest people in this city, and he has a lot of people working around and in his house. Figures why his place would be robbed.
+DD: So the suspects are people close to him?
+Chief: Yes. It involves 3 suspects who work for him. A gardener, a housemaid, and an accountant.
+DD: What was stolen.
+Chief: A diamond pendant that once belonged to the late Mrs. Elizabeth Werner, his wife.
+DD: Huh, sounds interesting. The Burglary guys are gonna have a field day over this one.
+Chief: We're not handing this case over to Burglary Dom, there are some... special circumstances that require someone more experienced. Like you.
+DD: How so?
+Chief: The pendant was stolen from Mrs. Elizabeth Werner.
+DD: Isn't she dead?
+Chief: Stolen from her grave. Someone, or a group perhaps, dug it out, opened her coffin and stole the pendant, all in one night.
+DD: I think 'special circumstances' is an understatement, Chief for what you just told me. So I'm assuming Mr. Werner discovered this the following morning.
+Chief: Yes, and let's just say he was not very happy when he looked out his window in the morning to find his wife's corpse strewn above her dug out grave.
+Chief: Early morning, 7:30AM is when Mr. Werner saw this.
+(add clue)
+Crime witnessed in morning
+Mr. Werner saw the open casket at 7:30AM
+(add clue)
+The crime
+Mr. Werner said he saw his late wife's casket dug out and the body defiled with the pendant missing from it.
+cont'd
+DD: Alright, now you got me. I'll take this case. Tell me we have some inital suspects or witnesses atleast?
+Chief: We do. Only three other people were at the manor with Werner. His housemaid, gardener, and accountant.
+Chief: The gardener, David, does work around the residence regualarly. He told us he knew nothing about waht had happend until the morning, but we could see his boots had fresh mud on them.
+(add clue)
+Muddy boots
+Boots in the shed, normally worn by the gardener, still had fresh mud on them the next morning.
+cont'd
+DD: He seems like the type equipped for this kind of crime, but would a gardener capable of doing something like this?
+(AddtoNtbkOther)
+David:Wherabouts during crime
+cont'd
+Chief: That's for you to find out. Next, we have the housemaid, Karen.
+Chief: She does regular work in the house, helping Mr. Werner in his old age. She normally is awake before Mr. Werner, so we think she may have something for us.
+(AddtoNtbkOther)
+Karen:What did you see
+cont'd
+Chief: And lastly, we have the accountant, James. Long time companion and financial advisory to Werner. He was working late in the night with Mr. Werner in the study, and left for his home around midnight.
+Chief: So perhaps he had seen something. We don't have him here at the station yet, but when we do, you'll be notified. And then come take to me again.
+DD: Alright. Looks like I got a lot of work ahead of. You've given me a lot to work with here. Hopefully it will be enoguh to get whoever did this to the Werner's.
+Chief: I trust you'll find the answer. Good Luck, Dominick. 
+end
+---------------------
+unlockedSpeech: Chief- Tutorial1
+DD: Hey, Chief you got any advice for this case?
+Chief: I reccomend examing your evidence carefully before deciding to accuse someone of lying, because you'll have to show correct proof to back your accusation.
+DD: (once I press Lie, I can choose an evidence to use use as proof. Also, by clicking on it I can read it's details in the Interface.)
+(unlock speech)
+Chief- Tutorial2
+cont'd
+DD: (Once I've made my choice I make sure I have the one I want selected, and I press Select).
+end
+unlockedSpeech: Chief- Tutorial2
+Chief: So, you came back for some advice, huh?
+Chief: I reccomend you check back with me every so often to stay updated. And when I have something important for you, you will know.
+DD: (I will recieve a notification when the Chief wants to talk with me.)
+DD: (He could provide new information, evidence, or suspects for me to interrogate.)
+end
+--------------- 
+
+

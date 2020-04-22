@@ -1,0 +1,28 @@
+Witness Name:
+Samantha Perri
+Encounter:0
+------
+Question:0
+Name of assaliant
+Question:0
+Blaming John Doe
+------------
+Speech0
+DD: Hello, John I am gonna ask you a couple questions.
+Samantha Perri: Okay, I'll try my best, detective...
+DD: Detective Dom.
+(unlockSpeech)
+John Doe:Allesia Blames you
+------------------+
+Q: Name of assaliant
+DD: What was the name of the assaliant?
+Samantha Perri: I'm not sure.
+Q: Blaming John Doe
+DD: Why did you bame John?
+Samantha Perri: I think it's him.
+(add clue)
+John Doe suspect
+John Doe might be the killer.
+Q: Party?
+DD: this is sign that it works.
+-------------------------------

@@ -1,0 +1,73 @@
+Witness Name:
+David
+Encounter0
+-------------
+//Clues:
+4 bank robbers spotted at scene
+At the time of the bank robberry, 4 suspects were spotted.
+//Clues:
+Robbers were carrying guns
+The robbers were holding 44. magnum pistols.
+---------------
+Speech0
+DD: So you must be the gardener.
+David: Who are you? Are you an officer?
+DD: I'm a Detective. Detective Dom, and I'm gonna ask you a couple questions regarding the theft that ocurred at the Werner residence.
+David: Alright, De-Detective Dom.
+DD: You all right?
+David: Not exactly. No, wait, what I mean is I am it's just... this is crazy stuff, Detective.
+David: You work at a place for 10 years, and this happens.
+David: I figured with Mr. Werner these sorts of extravagent things would eventually happen, but I didn't think I'd be in the middle of it too.
+DD: That's what I'm here for. To clear things up and find the truth. I'm just going to ask you a few questions.
+David: Alright, I got nothing to hide anyways.
+end
+-----------------
+Q: Wherabouts during crime
+DD: Where were you when all this took place?
+David: Me? Well I was sleeping in like I always am on weekends. I learnt that there's not much point in doing gardening that early in the morning if the person paying isn't there to see it.
+(show options)
+lie
+Q: Wherabouts during crime: clue required:
+David was up early
+DD: Karen says you were awake early, and that you usually don't do that.
+David: Well, maybe to her it was early. She never paid any attention to me before and now all of a sudden she seems to know a lot about me.
+DD: So, you're saying she lied?
+David: No, no. I was up early.
+DD: Why?
+David: Gardening.
+DD: You just told me there was no point in doing it so early.
+David: Yes, but on that particular day, Werner wanted me to tend to the shrub display out front. We were going to have guests over for dinner that night and he wanted his garden to look all prim and nice.. and expensive.
+DD: What dinner event?
+David: Don't you know? It was to celebrate the day Mr. and Mrs. Werner first met.
+DD: Wait, what? How did I not know of this already?
+David: It's not public knowledge, Werner's not a very public guy. He likes to keep any family matter, no matter how small, tight-knit and private. You can imagine how boring the birthdays are around here.
+David: But for this day, Werner said he was going to make an exception and invite some of his close people.
+David: I'll tell you this though, whoever did this today certainly has got an imagination, or just blind luck.
+(add clue)
+Dinner event planned
+David says there was a dinner event planned to celebrate the anniversary of when the Werners first met. It was supposed to take place today.
+cont'd
+DD: There's nothing lucky or fortunate about what happened today.
+David: Yeah, I know. Just making talk is all, Detective.
+end
+Accuse:Wherabouts during crime
+DD: I don't think that's true at all.
+David: No... what makes you say that?
+DD: I think you already know.
+David: Well, where's your proof?
+DD: (I have to choose evidence to prove my hunch)
+(choose evidence)
+Incorrect: chose truth: Wherabouts during crime
+DD: What were you doing after you woke up?
+David: Well, nothing much unusual. I woke up, made my way to the shed and then heard all the ruckus, then ran to see what happened.
+DD: And what did you see?
+David: An open casket and a really pissed off old man.
+end
+Incorrect: chose doubt: Wherabouts during crime
+DD: I don't think Mr. Werner shares the apathy that you hold for your work, and I don't think he would be happy finding it out. Now tell me now: Where were you at the time of the crime.
+David: I told you! I was asleep. And that's it. There's no games here, Detective.
+end
+Incorrect: chose lie: Wherabouts during crime
+David: I don't see how that connects, Detective.
+end
+-------------------
